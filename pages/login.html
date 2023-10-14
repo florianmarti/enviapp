@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iniciar Sesión</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/syles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm" action="../php/login.php" method="POST">
+        <input
+          type="email"
+          name="correo"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="password"
+          name="contrasena"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="./registro.html">Regístrate</a></p>
+    </div>
+  </body>
+</html>
