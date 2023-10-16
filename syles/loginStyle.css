@@ -1,0 +1,124 @@
+/* style.css */
+:root {
+  --colorPrincipal {
+    color: #be92a8;
+  }
+  --colorSecundario {
+    color: #c5b5dc;
+  }
+  --colorTerciario {
+    color: #8044d8;
+  }
+  --colorCuaternario {
+    color: #1c4ac4;
+  }
+  --colorQuinario {
+    color: #089b30;
+  }
+  --colorSenario {
+    color: #569b08;
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.classImg {
+  display: flex;
+  margin: 50px 5px 10px 28%;
+}
+.container {
+  border-radius: 5px;
+
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Estilos de enlaces */
+
+a:hover {
+  color: #555;
+}
+/* Estilos para el loader */
+
+nav {
+  text-decoration: none; /* Elimina el subrayado de los enlaces en el menú */
+}
+#login-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* mediaQ*/
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  }
+
+  nav {
+    display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
+    /* Estilos adicionales para el menú en pantallas pequeñas */
+  }
+  .header {
+    flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
+    text-align: center; /* Centra el contenido en el eje X */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Espacio entre el logo y el loader */
+  }
+  .loader-container,
+  .logo-container {
+    display: block; /* Cambia a diseño de bloque en pantallas pequeñas */
+  }
+
+  .logo-container {
+    margin-top: 10px; /* Espacio entre el loader y el logo en dispositivos móviles */
+  }
+}

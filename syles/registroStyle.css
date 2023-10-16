@@ -1,0 +1,217 @@
+/* style.css */
+:root {
+  --colorPrincipal {
+    color: #be92a8;
+  }
+  --colorSecundario {
+    color: #c5b5dc;
+  }
+  --colorTerciario {
+    color: #8044d8;
+  }
+  --colorCuaternario {
+    color: #1c4ac4;
+  }
+  --colorQuinario {
+    color: #089b30;
+  }
+  --colorSenario {
+    color: #569b08;
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos en el encabezado */
+}
+.logoContainer {
+  display: block;
+  max-width: 200px;
+}
+
+.container {
+  border-radius: 5px;
+
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Estilos de formularios */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Estilos de enlaces */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #555;
+}
+/* Estilos para el loader */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+/* Estilos generales para el contenedor principal */
+.loader-container,
+.logo-container {
+  text-align: center;
+}
+nav {
+  text-decoration: none; /* Elimina el subrayado de los enlaces en el menú */
+}
+#login-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el logo */
+.logo-container {
+  max-width: 40%; /* Reducción del tamaño al 40% */
+}
+.hidden {
+  display: none;
+}
+.logo {
+  display: block;
+  max-width: 400px; /* Ajusta el tamaño de tu logo */
+}
+
+/* Estilos para el contenido principal */
+.content {
+  display: none; /* Inicialmente oculto */
+  /* Agrega estilos adicionales para tu contenido principal */
+}
+/* Estilos para el menú de navegación */
+.nav-container {
+  display: flex; /* Muestra los elementos de navegación en línea (horizontalmente) */
+  flex: 2; /* El menú de navegación ocupará más espacio en el contenedor */
+  text-align: center; /* Centra los elementos del menú horizontalmente */
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block; /* Muestra los elementos en línea horizontal */
+  margin-right: 20px; /* Agrega espacio entre elementos del menú */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--colorPrincipal);
+}
+
+.nav-links a:hover {
+  color: var(--colorSecundario);
+}
+
+/* Estilos para el botón de login */
+.button-container {
+  flex: 1; /* El botón de login ocupará el espacio restante en el contenedor */
+  text-align: right; /* Alinea el botón a la derecha del contenedor */
+}
+/* mediaQ*/
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  }
+
+  nav {
+    display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
+    /* Estilos adicionales para el menú en pantallas pequeñas */
+  }
+  .header {
+    flex-direction: column; /* Cambia a diseño de columna en pantallas pequeñas */
+    text-align: center; /* Centra el contenido en el eje X */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Espacio entre el logo y el loader */
+  }
+  .loader-container,
+  .logo-container {
+    display: block; /* Cambia a diseño de bloque en pantallas pequeñas */
+  }
+
+  .logo-container {
+    margin-top: 10px; /* Espacio entre el loader y el logo en dispositivos móviles */
+  }
+}
